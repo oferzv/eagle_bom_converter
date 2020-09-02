@@ -27,8 +27,8 @@ You can add those attributes to your parts or change the line of code that conta
 ```python
 newDf = bomDf[['Qty', 'Parts','MF','MPN','VALUE','FOOTPRINT','DESCRIPTION']].copy()
 ```
-2. Export CSV BOM from Eagle:
-To generate a BOM file from Eagle make sure you are in the Schematic Editor and go to File > Export > BOM. This will open up a new window where you can configure how you want the BOM file to look like. Check Values and CSV optionNext you can save the bom.csv file to the desired location by clicking the Save button.
+2. Export CSV BOM from Eagle:  
+To generate a BOM file from Eagle make sure you are in the Schematic Editor and go to **File > Export > BOM.** This will open up a new window where you can configure how you want the BOM file to look like. Check Values and CSV optionNext you can save the bom.csv file to the desired location by clicking the Save button.
 
 ![image](docs/pic/bomExport.JPG)
 
