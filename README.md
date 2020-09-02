@@ -1,5 +1,5 @@
 # Eagle BOM Converter
-a simple script to convert eagle BOM.ulp script csv output file in to a neatly arranged excel file and add distributor price using Octopart excel add-in
+a simple script to convert eagle BOM.ulp script csv output file into a neatly arranged excel file and add distributor price using Octopart excel add-in
 
 ## Features
 - convert a CSV BOM (exported from eagle) to excel format.
