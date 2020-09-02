@@ -4,7 +4,8 @@ a simple script to convert eagle BOM.ulp script csv output file in to excel form
 ## Features
 - convert a CSV BOM (exported from eagle) to excel format.
 - Removes unnecessary attributes.
-- Adding an index column. 
+- Adding an index column.
+- Adding an header row. 
 - Removes rows with EXCLUDE attribute from BOM.
 - Generate a excel BOM with Octopart formulas and price estimate. 
 
@@ -43,8 +44,12 @@ To generate a BOM file from Eagle make sure you are in the Schematic Editor and 
 ```shell
 repo path/python bomToolGuiV3.py  
 ```
+you will get this window:  
+
 ![image](docs/pic/app.JPG)
 
+Press the “select a file” button and chose the file to convert, the path for the file will appear in the text box to generate the BOM press the “RUN” button on completion the text in path text box will change to “done select new file” the new file is saved in the same folder as the original CSV file.  
+**Octopart** - To generate a BOM with OCTOPART_DISTRIBUTOR_PRICE formula and total price caluclation column press the “Octopart” check box.
 ## TO DO
 - [ ] improve column with auto size fit.
 - [ ] easy attribute customization.
