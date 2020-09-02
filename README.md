@@ -34,8 +34,9 @@ To generate a BOM file from Eagle make sure you are in the Schematic Editor and 
 
 3. Run the python script from command line:
 ```shell
-repo path/python bomToolGuiV3.py
+repo path/python bomToolGuiV3.py  
 ```
+![image](docs/pic/app.JPG)
 
 ## TO DO
-[ ] Improve column with auto size fit
+- [ ] Improve column with auto size fit
