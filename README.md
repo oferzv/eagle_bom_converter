@@ -1,28 +1,36 @@
-# Eagle bom converter
-a simple script to convert eagle BOM ULP csv output file in to excel format and add distributor price using Octopart excel add-in
+# Eagle BOM Converter
+a simple script to convert eagle BOM.ulp script csv output file in to excel format and add distributor price using Octopart excel add-in
 
 ## Features
 - convert a CSV BOM (exported fro eagle) to excel.
-- add an index colume. 
+- Removes unnecessary attributes.
+- Adding an index column. 
 - Removes rows with EXCLUDE attribute from BOM.
 - Generate a excel BOM with Octopart formulas and price estimate. 
 
 ## Dependencies
-### Install openpyxl using pip
-
+* Python3
+* openpyxl   
+Install using pip
 ```shell
 pip install openpyxl
 ```
 
 ### Octopart add-in 
+https://octopart.com/excel
 
 ## Usage
 
 1. add Part Attributes in eagle library:
-This script is searching for specific attributes in the csv file: 
-```python
-Qty, Parts, MF, MPN, VALUE, FOOTPRINT, DESCRIPTION
-```
+This script is searching for specific attributes in the csv file:   
+    - Parts = part designator.     
+    - Qty = part quantity.  
+    - MF  = part manufacturer.   
+    - MPN = manufacturer part number. 
+    - VALUE =  i use it for capcitors and resistors values.
+    - FOOTPRINT =  part package.
+    - DESCRIPTION = i use the Description from Digi-key.
+
 You can add those attributes to your parts or change the line of code that contains the attributes:
 ```python
 newDf = bomDf[['Qty', 'Parts','MF','MPN','VALUE','FOOTPRINT','DESCRIPTION']].copy()
@@ -39,4 +47,5 @@ repo path/python bomToolGuiV3.py
 ![image](docs/pic/app.JPG)
 
 ## TO DO
-- [ ] Improve column with auto size fit
+- [ ] Improve column with auto size fit.
+- [ ] easy attribute customization.
