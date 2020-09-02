@@ -17,7 +17,7 @@ Install using pip:
 pip install openpyxl
 ```
 * **Octopart add-in.**  
-https://octopart.com/excel
+In order to install the add-in follow the instructions in the link: https://octopart.com/excel
 
 ## Usage
 
