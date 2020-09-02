@@ -20,10 +20,12 @@ pip install openpyxl
 
 1. add Part Attributes in eagle library:
 This script is searching for specific attributes in the csv file: 
+```python
     Qty, Parts, MF, MPN, VALUE, FOOTPRINT, DESCRIPTION
+```
 You can add those attributes to your parts or change the line of code that contains the attributes:
 ```python
-  newDf = bomDf[['Qty', 'Parts','MF','MPN','VALUE','FOOTPRINT','DESCRIPTION']].copy()
+newDf = bomDf[['Qty', 'Parts','MF','MPN','VALUE','FOOTPRINT','DESCRIPTION']].copy()
 ```
 
 ## TO DO
