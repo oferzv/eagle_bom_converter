@@ -9,19 +9,18 @@ a simple script to convert eagle BOM.ulp script csv output file in to excel form
 - Generate a excel BOM with Octopart formulas and price estimate. 
 
 ## Dependencies
-* Python3
-* openpyxl   
-Install using pip
+* **Python3.**
+* **openpyxl.**   
+Install using pip:
 ```shell
 pip install openpyxl
 ```
-
-### Octopart add-in 
+* **Octopart add-in.**  
 https://octopart.com/excel
 
 ## Usage
 
-1. add Part Attributes in eagle library:
+1. add Part Attributes in eagle library.  
 This script is searching for specific attributes in the csv file:   
     - Parts = part designator.     
     - Qty = part quantity.  
@@ -47,5 +46,5 @@ repo path/python bomToolGuiV3.py
 ![image](docs/pic/app.JPG)
 
 ## TO DO
-- [ ] Improve column with auto size fit.
+- [ ] improve column with auto size fit.
 - [ ] easy attribute customization.
