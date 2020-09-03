@@ -11,6 +11,11 @@ a tool to convert CSV output file of the BOM.ulp into neatly arranged excel file
 
 ## Dependencies
 * **Python3.**
+* **pandas.**  
+Install using pip:   
+```shell
+pip install pandas
+```
 * **openpyxl.**   
 Install using pip:
 ```shell
